@@ -1,20 +1,6 @@
-Skip to content
-
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @adrioro Sign out
-0
-0 0 adrioro/Cake
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-Cake/style.css
-29d06a0  on Jan 3
-@adrioro adrioro Eighth commit
-
-110 lines (105 sloc)  1.96 KB
+/*body{
+  $enable-shadows: true;
+}*/
 .logo{
   margin-right: 24px;
 }
@@ -36,11 +22,13 @@ Cake/style.css
   margin-top: 34px;
   color: #303952;
   font-family: Nunito Sans;
+  text-shadow: 7px 5px 1px #dbd6d6;
 }
 .subtitle{
   font-weight: extra-light;
   font-size: 24px;
   font-family: Nunito Sans;
+
 }
 .section_row{
   margin-top: 65px;
@@ -124,16 +112,7 @@ a.socialIcon:hover, .socialHoverClass {
 	line-height:50px;
 	text-align: center;
 }
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
+.AC{
+text-align: center;
+margin-top: 7px;
+}

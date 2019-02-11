@@ -1,20 +1,3 @@
-Skip to content
-
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
-@adrioro Sign out
-0
-0 0 adrioro/Cake
-Code Issues 0 Pull requests 0 Projects 0 Wiki Insights Settings
-Cake/index.html
-29d06a0 on Jan 3
-@adrioro adrioro Eighth commit
-
-281 lines (257 sloc) 11.2 KB
 <!DOCTYPE html>
 <!-- Instruction to the web browser about what version of html the page is written in.-->
 <html lang="en">
@@ -38,6 +21,7 @@ Cake/index.html
     here for social media icons-->
       <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet"><!-- Google font-->
       <link rel="stylesheet" href="style.css" class="css"><!-- <Required css style sheet</Re>-->
+      <script src="index.js"></script>
       <title>Cake Art's Webpage</title> <!-- Required -->
    </head>
 
@@ -54,7 +38,7 @@ What it will be seen when the user loads the webpage.-->
             <!-- <a class="navbar-brand" href="#">
       <strong>CAKE ART</strong>
     </a>-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse"
               data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
               aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -112,7 +96,9 @@ What it will be seen when the user loads the webpage.-->
       <main role="main">
 
          <!-- Title -->
-         <h1 class="title text-uppercase text-center">Cake Art</h1>
+         <h1 id="title" class="title text-uppercase text-center shadow p-3 mb-5">Cake
+            Art</h1>
+
          <p class="subtitle text-uppercase text-center">Cakes, pastries and other sweets</p>
 
          <!--Carousel-->
@@ -134,15 +120,16 @@ What it will be seen when the user loads the webpage.-->
 
                   <div class="carousel-item active">
                      <!--active needs to be added to one of the slides-->
-                     <img class="d-block w-100" src="images/cafecontorta.jpg" alt="First slide">
+                     <img id="img1" class="d-block w-100" src="images/cafecontorta.jpg"
+                       alt="First slide">
                   </div>
 
                   <div class="carousel-item">
-                     <img class="d-block w-100" src="images/cupcakes.jpg" alt="Second slide">
+                     <img id="img1" class="d-block w-100" src="images/cupcakes.jpg" alt="Second slide">
                   </div>
 
                   <div class="carousel-item">
-                     <img class="d-block w-100" src="images/bake.jpg" alt="Third slide">
+                     <img id="img1" class="d-block w-100" src="images/bake.jpg" alt="Third slide">
                   </div>
                </div>
                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
@@ -206,7 +193,7 @@ What it will be seen when the user loads the webpage.-->
                   </div>
 
                   <div class="card">
-                     <img class="card-img-top" src="images/Desserts.jpg" alt="Card image cap">
+                     <img class="card-img-top" src="images/desserts.jpg" alt="Card image cap">
 
                      <div class="card-body">
                         <!--all text content bellow image-->
@@ -335,27 +322,19 @@ What it will be seen when the user loads the webpage.-->
                </div>
             </div>
          </div>
+         <p class="AC">© 2019 Adriana Cerrotti</p>
       </footer>
    </body>
 
 
-   <!-- jQuery first, then Popper.js, then Bootstrap JS scrips. -->
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!-- Si tenéis jQuery importado a vuestro proyecto y os aparece este error con
+        muchas de sus funciones, slideUp, slideDown, slideToggle etc… es porque
+        seguramente tengamos importado la “nueva” versión ligera (SLIM) de jQuery. Así
+        que si tenemos importado:-->
+   <script src="https://code.jquery.com/jquery-3.2.1.js"> </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   </body>
 
 </html>
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
