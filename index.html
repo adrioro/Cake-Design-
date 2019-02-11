@@ -21,7 +21,7 @@
     here for social media icons-->
       <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet"><!-- Google font-->
       <link rel="stylesheet" href="style.css" class="css"><!-- <Required css style sheet</Re>-->
-      <script src="index.js"></script>
+      <script type="text/javascript" src="script.js"></script>
       <title>Cake Art's Webpage</title> <!-- Required -->
    </head>
 
@@ -99,11 +99,22 @@ What it will be seen when the user loads the webpage.-->
          <h1 id="title" class="title text-uppercase text-center shadow p-3 mb-5">Cake
             Art</h1>
 
-         <p class="subtitle text-uppercase text-center">Cakes, pastries and other sweets</p>
+         <p id="subtitle" class="subtitle text-uppercase text-center">Cakes, pastries and
+            other sweets</p>
+
+         <!-- Order Button-->
+
+         <div class="order row">
+
+            <div class="col-md-12 text-center">
+               <button id="find" class="order-button btn btn-lg" onclick="clickFunction()"><strong>Let
+                     us help you find your favorite dessert.</strong></button>
+            </div>
+         </div>
 
          <!--Carousel-->
 
-         <div class="slides_container container slide-container border">
+         <div id="caroucel" class="slides_container container slide-container border">
             <!--Carousels require the use of an id-->
 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -145,14 +156,7 @@ What it will be seen when the user loads the webpage.-->
             </div>
          </div>
 
-         <!-- Order Button-->
 
-         <div class="order row">
-
-            <div class="col-md-12 text-center">
-               <button class="order-button btn btn-lg"><strong>Place your order.</strong></button>
-            </div>
-         </div>
 
          <!-- Cards -->
 
