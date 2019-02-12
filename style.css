@@ -13,6 +13,10 @@
 .order-button{
   background-color: #e3f2fd;
   margin: 16px;
+  border: 2px solid #c6e3f9;
+}
+.order-button:hover{
+  background-color: #c6e3f9;
 }
 .slides_container{
   padding-top: 13px;
@@ -21,14 +25,15 @@
 .title {
   font-size: 56px;
   margin-top: 34px;
-  color: #303952;
+  color: #554728;
   font-family: Nunito Sans;
   text-shadow: 7px 5px 1px #dbd6d6;
 }
-.subtitle{
+.subtitle, .phone{
   font-weight: extra-light;
   font-size: 24px;
   font-family: Nunito Sans;
+  text-align: center;
 
 }
 .section_row{
@@ -116,4 +121,8 @@ a.socialIcon:hover, .socialHoverClass {
 .AC{
 text-align: center;
 margin-top: 7px;
+}
+.card-title{
+  text-transform: uppercase;
+  color: #554728;
 }
